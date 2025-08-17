@@ -16,6 +16,7 @@ import {
 } from "@mui/material";
 import { questions } from "@/questions";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
+import { Scoreboard } from "@/Scoreboard";
 
 export default function QuestionPage() {
     const params = useParams();
@@ -103,6 +104,8 @@ export default function QuestionPage() {
                     )}
                 </Stack>
             </Container>
+            <Box sx={{ height: "400px" }} />
+            <Scoreboard />
         </Box>
     );
 }

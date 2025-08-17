@@ -15,6 +15,7 @@ import {
     ListItemButton,
 } from "@mui/material";
 import { questions } from "@/questions";
+import { Scoreboard } from "@/Scoreboard";
 
 export default function HomePage() {
     return (
@@ -51,6 +52,8 @@ export default function HomePage() {
                     pb: "calc(env(safe-area-inset-bottom) + 16px)",
                 }}
             >
+
+
                 <Typography
                     variant="subtitle2"
                     sx={{ mb: 1, color: "text.secondary" }}
@@ -93,8 +96,10 @@ export default function HomePage() {
                             {i < questions.length - 1 && <Divider component="li" />}
                         </React.Fragment>
                     ))}
+                    <Box sx={{ height: "400px" }} />
                 </List>
             </Container>
+            <Scoreboard />
         </Box>
     );
 }
