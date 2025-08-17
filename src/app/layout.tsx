@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Quiz',
     description: "En quiz for bar-til-bar under fadderuken til Omega",
-    siteName: 'omega-quiz.djupvik.dev',
+    siteName: 'omega-quiz.linode.djupvik.dev',
   },
   robots: {
     index: true,
